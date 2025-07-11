@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shop - Morya Sports</title>
+  <link rel="stylesheet" href="shop.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="home.html" class="icon-btn">
+      <svg width="32" height="32" fill="#1976d2" viewBox="0 0 24 24">
+        <path d="M15 18l-6-6 6-6"/>
+      </svg>
+    </a>
+    <h1>Morya Sports</h1>
+    <button onclick="location.href='cart.html'" class="icon-btn">
+      🛒<span id="cart-count">0</span>
+    </button>
+  </header>
+
+  <!-- Search and Filter -->
+  <div class="search-filter">
+    <input type="text" id="searchInput" placeholder="Search for products...">
+    <select id="priceFilter">
+      <option value="default">Sort by</option>
+      <option value="low">Price: Low to High</option>
+      <option value="high">Price: High to Low</option>
+    </select>
+  </div>
+
+  <!-- Product Grid -->
+  <section class="product-grid" id="productGrid">
+    <!-- JS will inject product cards here -->
+  </section>
+
+  <script src="shop.js"></script>
+    <!-- Footer CSS Link -->
+<footer class="footer">
+  <div class="footer-content">
+    <!-- About -->
+    <div class="footer-about">
+      <h2>Morya Sports</h2>
+      <p>
+        Morya Sports deals in high-quality sportswear and equipment — from shoes, bats, balls, tracksuits, to professional cricket wear. Trusted by athletes and casual players alike, we combine performance and style for every sports enthusiast.
+      </p>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>
+        <svg width="20" height="20" fill="#00ffae" viewBox="0 0 24 24">
+          <path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zM7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 2.5-2.5 6.61-5 9.88C9.5 15.61 7 11.5 7 9z"/>
+          <circle cx="12" cy="9" r="2.5"/>
+        </svg>
+        Koparkhairane Sec 7 (400709), Navi Mumbai
+      </p>
+      <p>
+        <svg width="20" height="20" fill="#00ffae" viewBox="0 0 24 24">
+          <path d="M16.59 8.59a2 2 0 0 0-2.83 0l-.88.88a.996.996 0 0 1-1.41 0l-1.47-1.47a.996.996 0 0 1 0-1.41l.88-.88a2 2 0 0 0 0-2.83L8.41 2.59A2 2 0 0 0 5.58 2C4.71 2 3.88 2.42 3.29 3.21c-1.36 1.76-.57 4.36 1.5 6.43l8.57 8.57c2.07 2.07 4.67 2.86 6.43 1.5.79-.59 1.21-1.42 1.21-2.29 0-.72-.29-1.39-.81-1.91l-2.83-2.83z"/>
+        </svg>
+        <a href="https://wa.me/919702526927" target="_blank">9702526927 (WhatsApp)</a>
+      </p>
+      <p>
+        <svg width="20" height="20" fill="#00ffae" viewBox="0 0 24 24">
+          <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 .001 5.999A3 3 0 0 0 12 9zm5.5-.25a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0z"/>
+        </svg>
+        <a href="https://www.instagram.com/morya_sports_official_kk" target="_blank">Instagram</a>
+      </p>
+    </div>
+
+    <!-- Links -->
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li>
+          <svg width="18" height="18" fill="#00ffae" viewBox="0 0 24 24" style="margin-right: 6px;">
+            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+          </svg>
+          <a href="home.html">Home</a>
+        </li>
+        <li>
+          <svg width="18" height="18" fill="#00ffae" viewBox="0 0 24 24" style="margin-right: 6px;">
+            <path d="M20 6H4v12h16V6zm-2 10H6V8h12v8z"/>
+          </svg>
+          <a href="shop.html">Shop</a>
+        </li>
+        <li>
+          <svg width="18" height="18" fill="#00ffae" viewBox="0 0 24 24" style="margin-right: 6px;">
+            <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2S15.9 22 17 22s2-.9 2-2-.9-2-2-2zM7.16 14.26L6.4 12h11.24l-.75 2.26c-.12.34-.45.58-.83.58H8c-.38 0-.71-.24-.84-.58zM4 6h16v2H4z"/>
+          </svg>
+          <a href="cart.html">Cart</a>
+        </li>
+        <li>
+          <svg width="18" height="18" fill="#00ffae" viewBox="0 0 24 24" style="margin-right: 6px;">
+            <path d="M12 2a10 10 0 0 1 10 10c0 5.2-3.9 9.45-9 9.95V13h2v-2h-2V9.5a1.5 1.5 0 0 1 1.5-1.5H16V6.5h-1.5C12.01 6.5 11 7.51 11 9v2H9v2h2v8.95C6.9 21.45 3 17.2 3 12A10 10 0 0 1 12 2z"/>
+          </svg>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Morya Sports. All rights reserved. Designed with care for athletes by Shubham More.</p>
+  </div>
+</footer>
+</body>
+</html>
